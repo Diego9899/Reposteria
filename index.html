@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo -->
+    <title>Aplicacion</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+</head>
+<body>
+<div class="container roundBorder">
+<!-- Boton modal -->
+<!-- <button id="btn-abrir-modal">+</button> -->
+<!-- Ventana modal -->
+<div id="modal">
+    <div class="date">
+        <div class="dateRight">
+            <div id="dateNumber"></div>
+            <div>
+                <div id="dateMonth"></div>
+                <div id="dateYear"></div>
+            </div>
+        </div>
+        <div id="dateText"></div>
+</div>
+</div>
+
+<div class="containerApp">
+    <!-- Aplicacion -->
+    <div id="app" class="containerApp-form">
+        <div><h3>La Sole - Pastelería</h3></div>
+        <div><h4>Agregar pedidos</h4></div>
+        <form id="product-form" class="form">
+            <div class="group-form">
+                <span>&#127856;</span>
+                <input type="text" id="name" autocomplete="off" placeholder="Tipo de torta" class="roundBorder">  
+            </div>
+            <div class="group-form">
+                <span>&#128178;</span>
+                <input type="number" id="price" autocomplete="off" placeholder="Precio" class="roundBorder">  
+            </div>
+            <div class="group-form">
+                <span>&#11093;</span>
+                <input type="number" id="kg" autocomplete="off" placeholder="Kilogramos" class="roundBorder">
+            </div>
+            <div class="group-form">
+                <span>&#128129;</span>
+                <input type="text" id="client" autocomplete="off" placeholder="Pedido por" class="roundBorder">
+            </div>
+            <div class="group-form">
+                <span>&#128198;</span>
+                <input type="date" id="dateE" autocomplete="off" placeholder="Fecha de entrega" class="roundBorder">
+            </div>
+            <div class="group-form">
+                <span>&#128339;</span>
+                <input type="time" id="time" autocomplete="off" placeholder="Hora de entrega" class="roundBorder">
+            </div>
+            <div class="group-form">
+                <span>&#128065;</span>
+                <input type="text" id="observ" autocomplete="off" placeholder="Observaciones" class="roundBorder">
+            </div>
+            <input type="submit" value="Guardar" id="btnEnviar">
+        </form>
+    </div>
+    <div><h2>Lista de pedidos</h2></div>
+    <div id="product-list"></div>
+</div>
+</div>
+
+    <!-- Js -->
+<script src="/js/script.js"></script>
+</body>
+</html>

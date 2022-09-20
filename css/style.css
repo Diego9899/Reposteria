@@ -1,0 +1,156 @@
+/* Globales */
+*{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+span{
+    font-size: 20px;
+}
+
+/* -------Ventana emergente - Modal ------------*/
+
+/* Base */
+
+/* Utilizo este pseudoelemento para modificar la opacidad de la capa oscura
+entre el popup y el navegador. */
+#modal::backdrop{
+background-color: rgba(0, 0, 0, 0.55);
+}
+#modal{
+    max-width: 50ch;
+    margin: auto;
+    padding: 15px;
+}
+/* Fin modal */
+
+
+/*------------ Formulario --------------*/
+/* Titulos */
+.containerApp div h2{
+    font-size: 1.5rem;
+
+    color: rgb(52, 139, 238);
+    border-bottom: 2px solid rgb(52, 139, 238);
+
+    padding: 10px;
+}
+.containerApp .containerApp-form div h3{
+    font-size: 1.5rem;
+
+    color: rgb(52, 139, 238);
+    border-bottom: 2px solid rgb(52, 139, 238);
+
+    padding: 10px;
+}
+.containerApp .containerApp-form div h4{
+    font-size: 1.5rem;
+
+    color: rgb(52, 139, 238);
+    
+    padding: 10px;
+}
+/* ----------------------------- */
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    justify-content: flex-start;
+    align-items: center;
+
+    margin: auto;
+
+}
+.containerApp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: auto;
+}
+.containerApp-form{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+}
+/* Formulario + inputs */
+.form{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.form input{
+    padding: 0.5rem;
+    margin: 5px auto;
+
+    border: none;
+
+    border-left: 5px solid rgb(52, 139, 238);
+    border-radius: 5px;
+    background-color: whitesmoke;
+
+
+}
+.form input:focus{
+    transition: all 300ms ease;
+    background-color: rgba(52, 139, 238, 0.2);
+}
+/* Boton enviar */
+#btnEnviar{
+border: none;
+
+    background-color: rgb(52, 139, 238);
+    color: white;
+}
+#btnEnviar:hover{
+    background-color: rgb(42, 112, 192);
+    color: white;
+
+    transform: scale(1.2,1.2);
+    transition: all 300ms ease;
+}
+/* ------------------------------------------------- */
+
+/* Alertas */
+
+.alert{
+    width: 100%;
+    margin-top: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+
+    transition: all 300ms ease;
+}
+.alert-success{
+    background-color: rgb(67, 231, 141);
+}
+.alert-danger{
+    background-color: rgb(241, 173, 83);
+}
+/* -------------------------------- */
+
+/* Lista de pedidos */
+
+.productList{
+    width: 100%;
+
+    font-size: 15px;
+    background-color: rgba(220, 220, 220, 0.63);
+}
+.productList div div div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    align-items: flex-start;
+}
