@@ -24,7 +24,7 @@ btnCerrarModal.addEventListener("click", () =>{
 */
 // --------------------------------
 
-    //Variables FORM
+//Variables FORM
 
         // Info date
 const dateNumber = document.getElementById("dateNumber");
@@ -63,7 +63,7 @@ class UI{
     // Creo un metodo para agregar un pedido/producto en el DOM
     addProduct(product){
         // Obtengo por ID el DIV donde será insertado el pedido en "Lista de pedidos"
-        const productList = document.getElementById("product-list");
+        const productList = document.getElementById("productList");
         
         // Lista de pedidos:
             // Se crea un div que contendra cada producto que se agregue.
@@ -72,15 +72,15 @@ class UI{
         element.innerHTML = `
             <div>
                 <div>
-                    <strong>Pedido</strong>:${product.name}
-                    <strong>Precio</strong>:${product.price}
-                    <strong>Kilogramos</strong>:${product.kg}
-                    <strong>Pedido por</strong>:${product.client}
-                    <strong>Fecha de entrega</strong>:${product.dateE}
-                    <strong>Hora de entrega</strong>:${product.time}
-                    <strong>A tener en cuenta</strong>:${product.observ}
+                    <p><strong>Pedido:</strong>${product.name}</p>
+                    <p><strong>Precio:</strong>${product.price}</p>
+                    <p><strong>Kilogramos:</strong>${product.kg}</p>
+                    <p><strong>Pedido por:</strong>${product.client}</p>
+                    <p><strong>Fecha de entrega:</strong>${product.dateE}</p>
+                    <p><strong>Hora de entrega:</strong>${product.time}</p>
+                    <p><strong>A tener en cuenta:</strong>${product.observ}</p>
 
-                    <input type="button" name="delete" value="x"></input>
+                    <input type="button" name="delete" value="Borrar"></input>
                 </div>
             </div>
         `;
@@ -110,9 +110,9 @@ class UI{
         const container = document.querySelector(".containerApp");
         const app = document.querySelector("#app");
         container.insertBefore(div, app);
-        
-        setTimeout(function() {
-            const div = document.querySelector(".alert").remove;
+
+        setTimeout(() => {
+            document.querySelector(`.alert alert-${cssClass}`).remove
         }, 3000);
     }
 }
@@ -145,7 +145,7 @@ const productForm = document.getElementById("product-form");
 
         e.preventDefault();
     })
-document.getElementById("product-list").addEventListener("click", (e) =>{
+document.getElementById("productList").addEventListener("click", (e) =>{
     const ui = new UI();
     ui.deleteProduct(e.target)
 })
