@@ -34,7 +34,7 @@ div h3{
     flex-direction: column;
     flex-wrap: nowrap;
 
-    justify-content: center;
+    justify-content: left;
     align-items: flex-start;
 }
 #dateNumber{
@@ -108,6 +108,7 @@ span{
 
     margin: auto;
     width: 100%;
+    padding-top: 3rem;
 }
 .containerApp-form{
     display: flex;
@@ -116,6 +117,12 @@ span{
     justify-content: center;
     align-items: center;
 
+    padding: 1rem;
+    border: 3px solid none;
+    border-radius: 5px;
+    box-shadow: 7px 9px 50px 2px rgba(52, 139, 238, 0.64);
+    -webkit-box-shadow: 7px 9px 50px 2px rgba(52, 139, 238, 0.64);
+    -moz-box-shadow: 7px 9px 50px 2px rgba(52, 139, 238, 0.64);
 }
 /* Formulario + inputs */
 .form{
@@ -123,7 +130,7 @@ span{
     flex-direction: column;
 
     justify-content: center;
-    align-items: center;
+    align-items: left;
     margin: auto;
 }
 .form input{
@@ -174,7 +181,7 @@ input[name="delete"]{
     font-size: 20px;
     border-radius: 5px;
 
-    transition: all 300ms ease;
+    /* transition: all 300ms ease; */
 }
 .alert-success{
     background-color: rgb(67, 231, 141);
@@ -207,3 +214,24 @@ input[name="delete"]{
 
     padding-left: 1rem;
 }
+/* Footer */
+footer{
+    background-color: aliceblue;
+
+    height: 20vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+footer .footerStyle{
+    padding-left: 1rem;
+}
+footer .footerStyle p{
+    font-size: 15px;
+    color: rgb(42, 112, 192);
+}
+/* ----------- */
